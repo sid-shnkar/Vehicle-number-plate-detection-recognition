@@ -9,4 +9,7 @@ To install the python libraries required by the program, open the terminal and t
  pip install imutils
 ```
 
+Then download and install the software called tesseract from [here](https://github.com/UB-Mannheim/tesseract/wiki)
+
+
 
