@@ -32,6 +32,9 @@ Vehicle number plate detection and recognition system has a wide range of applic
 
 
 
+
+
+
 ![vndr-p2](https://user-images.githubusercontent.com/104520126/166226836-d228a55d-c97d-44d4-932d-5c4a9b10ce50.jpg)
 
 
