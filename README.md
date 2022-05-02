@@ -15,7 +15,20 @@ To install the python libraries required by the program, open the terminal and t
 
 Then download and install the software called tesseract from [here](https://github.com/UB-Mannheim/tesseract/wiki)
 
-## Project implementation
+## Implementation
+This project is implemented in four phases:
+
+### 1. Image pre-processing
+
+We take the images present in a folder called 'test_images' one by one as our input and resize the width to be equal to 300 pixels, and then we display it to the user. Next we convert our image to grayscale using cv2.COLOR_BGR2GRAY and display the converted image. Then we reduce the noise in the grayscale image with the help of cv2.bilateralFilter and display the flattened image on the screen.  
+
+### 2. Detection
+
+We pass the flattened image obtained in previous step cv2.canny to detect the edges in it. Then we find the contours from the edged image by removing all the redundant points on the contours detected.
+### 3. Recognition
+
+### 4. Searching
+
 
 ## Applications
 
