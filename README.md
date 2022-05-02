@@ -1,5 +1,5 @@
 # Vehicle-number-plate-detection-recognition
-A computer vision project to automatically detect and recognize the text written on the number plate from an input image of a vehicle.
+A computer vision project to automatically detect and recognize the text written on the number plate from an input image of a vehicle and also display the details like state and district to which the number plate is registered.
 
 **Programming language used:** Python
 
@@ -18,16 +18,21 @@ Then download and install the software called tesseract from [here](https://gith
 ## Implementation
 This project is implemented in four phases:
 
-### 1. Image pre-processing
+### 1. Pre-processing
 
-We take the images present in a folder called 'test_images' one by one as our input and resize the width to be equal to 300 pixels, and then we display it to the user. Next we convert our image to grayscale using cv2.COLOR_BGR2GRAY and display the converted image. Then we reduce the noise in the grayscale image with the help of cv2.bilateralFilter and display the flattened image on the screen.  
+We take the images present in a folder called 'test_images' one by one as our input and resize the width to be equal to 300 pixels, and then we display on the screen. Next we convert our image to grayscale using cv2.COLOR_BGR2GRAY and display the converted image. Then we reduce the noise in the grayscale image with the help of cv2.bilateralFilter and display the flattened image on the screen.  
 
 ### 2. Detection
 
-We pass the flattened image obtained in previous step cv2.canny to detect the edges in it. Then we find the contours from the edged image by removing all the redundant points on the contours detected.
+We pass the flattened image obtained in previous step cv2.canny to detect the edges in it. Then we find the contours from the edged image by removing all the redundant points on the contours detected. We then draw the identified contours on our image and display the image with the identified contours drawn around it.
+Next we sort the contours based on the minimum area which is set to be 30 and ignore the ones below that. We draw the sorted contours on the image and display the image which contains the top 30 contours drawn around it. Then we find contour with 4 sides by using cv2.arcLength and cv2.approxPolyDP functions. After completing these steps, we crop the rectangular part identified as number plate. Finally we draw and display the final image that has a contour drawn over the number plate.
+
 ### 3. Recognition
 
+In this phase, we extract the text from the image of the cropped number plate. For this task, we use the pytesseract library which is an optical character recognition (OCR) tool for python to extract and display the number plate on the screen.
+
 ### 4. Searching
+
 
 
 ## Applications
