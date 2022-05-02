@@ -28,5 +28,8 @@ Vehicle number plate detection and recognition system has a wide range of applic
 * Parking; Parking access automation, vehicle location guidance, parking fee charging, etc. are some of the areas in which this system is helpful.
 
 ## Program execution pics
+![vndr-p1](https://user-images.githubusercontent.com/104520126/166226824-a186bc82-339a-4342-9430-004b75fd47b9.jpg)
+![vndr-p2](https://user-images.githubusercontent.com/104520126/166226836-d228a55d-c97d-44d4-932d-5c4a9b10ce50.jpg)
+
 
 
