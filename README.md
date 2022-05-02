@@ -33,7 +33,7 @@ In this phase, we extract the text from the image of the cropped number plate. F
 
 ### 4. Searching
 
-
+In this phase, we search for the state and district in which the number plate was registered by taking the first 4 characters of the plate and searching it in the external database which is present in 'state_district.csv' file. It contains the RTO codes for each state and their respective districts. 
 
 ## Applications
 
